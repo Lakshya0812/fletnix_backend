@@ -2,7 +2,7 @@
     "version": 2,
     "builds": [
       {
-        "src": "manage.py",
+        "src": "fletnix/wsgi.py",
         "use": "@vercel/python",
         "config": {
           "maxLambdaSize": "50mb",
@@ -17,7 +17,7 @@
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "manage.py"
+        "dest": "fletnix/wsgi.py"
       }
     ],
     "env": {
